@@ -1,7 +1,7 @@
 # 3-Script to Update the ID format in all the Contents for shared Layout-
 
 # specify your path here. It is most likely be page templates and page content
-$startPath = "/sitecore/content/bupacomau"
+$startPath = "/sitecore/content"
 $loopCounter = 0
 Get-ChildItem -Path $startPath -Language * -Version * -Recurse | ForEach-Object {
     $item = $_;
