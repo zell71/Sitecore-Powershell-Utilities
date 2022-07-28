@@ -1,6 +1,6 @@
 # this script fixes placeholders in both Shared and Final Layout for the published item version.
 
-$startPath = "/sitecore/content/bupacomau/home"
+$startPath = "/sitecore/content"
 $ritems = @()
 Get-Item -Path $startPath | ForEach-Object {
     $item = $_;
