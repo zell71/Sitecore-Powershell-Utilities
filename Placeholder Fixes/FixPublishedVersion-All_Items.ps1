@@ -1,7 +1,7 @@
 # this script fixes placeholders in both Shared and Final Layout for the bublished item version.
 # NOTE: this will not work on the item in the Start Path, you will need to run the FixPublishedVersion-Single_Item.ps1 script
 
-$startPath = "/sitecore/content/bupacomau/home"
+$startPath = "/sitecore/content"
 $ritems = @()
 Get-ChildItem -Path $startPath -Recurse | ForEach-Object {
     $item = $_;
